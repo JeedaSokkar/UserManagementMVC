@@ -1,0 +1,24 @@
+﻿@model MvcUsersProject.Models.User
+<h1>Add User</h1>
+<form method="post" action='/Users/Store'>
+<div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" name="Name" class="form-control" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" name="Email" class="form-control" placeholder="name@example.com">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Age</label>
+    <input type="number" name="Age"class="form-control" placeholder="Enter your age">
+</div>
+<div class="mb-3">
+    <label class="form-label">Score</label>
+        <input type="number" name="Score" class="form-control" placeholder="Enter your score">
+</div>
+    <button type="submit" class="btn btn-outline-primary">Add</button>
+
+</form>

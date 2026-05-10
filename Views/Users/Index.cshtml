@@ -1,0 +1,15 @@
+﻿@model List<MvcUsersProject.Models.User>
+@if(!Model.Any())
+{
+    <p>No users found.</p>
+}
+else
+{
+    @foreach(var user in Model)
+    {
+        <div>
+            <h3>@user.Name</h3>
+            <p>Email: @user.Email</p>
+        </div>
+    }
+}
