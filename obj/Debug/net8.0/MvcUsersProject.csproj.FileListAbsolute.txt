@@ -138,3 +138,4 @@ C:\Users\jeeda\OneDrive\Desktop\ASP 14\Mvc\MvcUsersProject\MvcUsersProject\obj\D
 C:\Users\jeeda\OneDrive\Desktop\ASP 14\Mvc\MvcUsersProject\MvcUsersProject\obj\Debug\net8.0\MvcUsersProject.pdb
 C:\Users\jeeda\OneDrive\Desktop\ASP 14\Mvc\MvcUsersProject\MvcUsersProject\obj\Debug\net8.0\MvcUsersProject.genruntimeconfig.cache
 C:\Users\jeeda\OneDrive\Desktop\ASP 14\Mvc\MvcUsersProject\MvcUsersProject\obj\Debug\net8.0\ref\MvcUsersProject.dll
+C:\Users\jeeda\OneDrive\Desktop\ASP 14\Mvc\MvcUsersProject\MvcUsersProject\obj\Debug\net8.0\MvcUsersProject.sourcelink.json

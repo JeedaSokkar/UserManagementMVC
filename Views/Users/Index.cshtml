@@ -1,4 +1,12 @@
 ﻿@model List<MvcUsersProject.Models.User>
+<div class="d-flex justify-content-center my-2">
+    <h1 class="text-center">
+        All Users
+</h1></div>
+<div class="mb-3">
+    <a href="/Users/Create" type="button" class="btn btn-primary">Create</a>
+
+</div>
 @if(!Model.Any())
 {
     <p>No users found.</p>
@@ -7,9 +15,15 @@ else
 {
     @foreach(var user in Model)
     {
-        <div>
-            <h3>@user.Name</h3>
-            <p>Email: @user.Email</p>
+        <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <h3 class="mb-2">@user.Name</h3>
+            <p class="mb-3">@user.Email</p>
+
+            <a href="/Users/details/@user.Id" type="button" class="btn btn-secondary">View Details</a>
+            <a href="/Users/delete/@user.Id" type="button" class="btn btn-danger">Delete</a>
+            <a href="/Users/Edit/@user.Id" type="button" class="btn btn-outline-primary">Edit</a>
+
+
         </div>
     }
 }
