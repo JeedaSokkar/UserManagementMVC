@@ -17,11 +17,15 @@ namespace MvcUsersProject.Controllers
         //add User 
         public ViewResult Create()
         {
-            return View("Create");
+            return View("Create",new User());
         }
         //store user you add
-        public RedirectToActionResult Store(User request)
+        public IActionResult Store(User request)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Create", request);
+            }
             context.Users.Add(request);
             context.SaveChanges();
             return RedirectToAction("Index");
